@@ -1,0 +1,1 @@
+[Facade in Java](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library)
