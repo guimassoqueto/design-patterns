@@ -1,0 +1,1 @@
+[Facade in Python](https://refactoring.guru/design-patterns/facade/python/example)
