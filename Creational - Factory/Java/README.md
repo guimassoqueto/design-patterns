@@ -1,0 +1,1 @@
+[Factory - Java](https://refactoring.guru/design-patterns/factory-method/java/example)
