@@ -1,0 +1,1 @@
+[Factory - Typescript](https://refactoring.guru/design-patterns/factory-method/typescript/example)
