@@ -2,6 +2,7 @@
 
 ## Creational by Popularity
 :star::star::star: [Factory](./Creational%20-%20Factory/)  
+:star::star: [Singleton](./Creational%20-%20Singleton/) 
 
 ## Structural by Popularity
 :star::star: [Facade](./Structural%20-%20Facade/)  
