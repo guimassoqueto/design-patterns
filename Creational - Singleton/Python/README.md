@@ -1,0 +1,1 @@
+[Singleton - Python](https://refactoring.guru/design-patterns/singleton/python/example)
