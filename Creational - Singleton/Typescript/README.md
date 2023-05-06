@@ -1,0 +1,1 @@
+[Singleton - Typescript](https://refactoring.guru/design-patterns/singleton/typescript/example)
