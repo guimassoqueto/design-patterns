@@ -1,1 +1,1 @@
-<a href="https://refactoring.guru/design-patterns/strategy/java/example" target="_blank">Strategy in Java</a>
+[Strategy in Java](https://refactoring.guru/design-patterns/strategy/java/example)
