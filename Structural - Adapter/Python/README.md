@@ -1,0 +1,1 @@
+[Adapter in Python](https://refactoring.guru/design-patterns/adapter/python/example)
