@@ -1,0 +1,1 @@
+[Adapter in Typescript](https://refactoring.guru/design-patterns/adapter/typescript/example)
