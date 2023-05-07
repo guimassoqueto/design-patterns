@@ -1,0 +1,1 @@
+[Adapter in Java](https://refactoring.guru/design-patterns/adapter/java/example)
