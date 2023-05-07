@@ -1,1 +1,1 @@
-[Strategy in Typescript](https://refactoring.guru/design-patterns/strategy/typescript/example)
+<a href="https://refactoring.guru/design-patterns/strategy/typescript/example" target="_blank">Strategy in Typescript</a>

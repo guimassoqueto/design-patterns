@@ -1,0 +1,1 @@
+<a href="https://refactoring.guru/design-patterns/strategy/java/example" target="_blank">Strategy in Java</a>

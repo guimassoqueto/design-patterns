@@ -1,1 +1,1 @@
-[Strategy in Python](https://refactoring.guru/design-patterns/strategy/python/example)
+<a href="https://refactoring.guru/design-patterns/strategy/python/example" target="_blank">Strategy in Python</a>
