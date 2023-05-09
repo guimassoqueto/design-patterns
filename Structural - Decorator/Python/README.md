@@ -1,0 +1,1 @@
+[Decorator in Python](https://refactoring.guru/design-patterns/decorator/python/example)
