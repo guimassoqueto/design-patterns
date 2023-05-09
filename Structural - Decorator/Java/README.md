@@ -1,0 +1,1 @@
+[Decorator in Java](https://refactoring.guru/design-patterns/decorator/java/example)
