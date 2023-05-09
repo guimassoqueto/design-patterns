@@ -1,0 +1,1 @@
+[Decorator in Typescript](https://refactoring.guru/design-patterns/decorator/typescript/example)
