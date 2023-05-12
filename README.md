@@ -5,8 +5,10 @@
 :star::star: [Singleton](./Creational%20-%20Singleton/)  
 
 ## Structural by Popularity
-:star::star::star: [Adapter](./Structural%20-%20Adapter/)  
+:star::star::star: [Adapter](./Structural%20-%20Adapter/) 
+:star::star: [Composite](./Structural%20-%20Composite/)   
 :star::star: [Facade](./Structural%20-%20Facade/)  
+  
 
 ## Behavioral by Popularity
 :star::star::star: [Observer](./Behavioral%20-%20Observer/)  
