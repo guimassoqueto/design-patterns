@@ -1,6 +1,6 @@
 ## Observer in Python
 
-Conceptual Example
+### Conceptual Example
 
 This example illustrates the structure of the Observer design pattern. It focuses on answering these questions:
 
