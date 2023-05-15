@@ -11,6 +11,7 @@
   
 
 ## Behavioral by Popularity
+:star::star::star: [Iterator](./Behavioral%20-%20Iterator/)  
 :star::star::star: [Observer](./Behavioral%20-%20Observer/)  
 :star::star::star: [Strategy](./Behavioral%20-%20Strategy/)  
 :star::star: [Chain of Responsability](./Behavioral%20-%20Chain%20of%20Responsability/)  
