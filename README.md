@@ -7,6 +7,7 @@
 ## Structural by Popularity
 :star::star::star: [Adapter](./Structural%20-%20Adapter/)  
 :star::star: [Composite](./Structural%20-%20Composite/)  
+:star::star: [Decorator](./Structural%20-%20Decorator/)  
 :star::star: [Facade](./Structural%20-%20Facade/)  
 :star: [Bridge](./Structural%20-%20Bridge/)  
   
