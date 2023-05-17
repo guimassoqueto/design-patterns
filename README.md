@@ -17,4 +17,5 @@
 :star::star::star: [Observer](./Behavioral%20-%20Observer/)  
 :star::star::star: [Strategy](./Behavioral%20-%20Strategy/)  
 :star::star: [Chain of Responsability](./Behavioral%20-%20Chain%20of%20Responsability/)  
+:star::star: [Mediator](./Behavioral%20-%20Mediator/)  
 
