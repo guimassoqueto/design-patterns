@@ -1,4 +1,7 @@
-## Stategy in Java 
+## Mediator in Java 
+
+## ERROR
+If you run this program using java 19, there will be an error. [See the solution here](./ABOUT_ERROR.md)
 
 ### Notes app
 
