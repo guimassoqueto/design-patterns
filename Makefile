@@ -1,9 +1,9 @@
 HUSKY=npx husky install
 BROWSER=firefox
 # instala dependencias
-install:
+i:
 	${HUSKY} && npm install
 
 # abre o navegador na página principal do repositório no GitHub 
-open-repo:
+or:
 	${BROWSER} -url "https://github.com/guimassoqueto/design-patterns"
