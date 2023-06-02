@@ -10,6 +10,7 @@
 :star::star: [Decorator](./Structural%20-%20Decorator/)  
 :star::star: [Facade](./Structural%20-%20Facade/)  
 :star: [Bridge](./Structural%20-%20Bridge/)  
+:star: [Proxy](./Structural%20-%20Proxy/)  
   
 
 ## Behavioral by Popularity
