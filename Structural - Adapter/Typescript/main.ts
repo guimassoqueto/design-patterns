@@ -1,39 +1,15 @@
-class Target {
-  public request(): string {
-      return 'Target: The default target\'s behavior.';
-  }
-}
+import { Adaptee } from "./adaptee.ts";
+import { Adapter } from "./adapter.ts";
+import { Target } from "./target.ts";
 
 
-class Adaptee {
-  public specificRequest(): string {
-      return '.eetpadA eht fo roivaheb laicepS';
-  }
-}
-
-
-class Adapter extends Target {
-  private adaptee: Adaptee;
-
-  constructor(adaptee: Adaptee) {
-      super();
-      this.adaptee = adaptee;
-  }
-
-  public request(): string {
-      const result = this.adaptee.specificRequest().split('').reverse().join('');
-      return `Adapter: (TRANSLATED) ${result}`;
-  }
-}
-
-
-function clientCode(target: Target) {
+function main(target: Target) {
   console.log(target.request());
 }
 
 console.log('Client: I can work just fine with the Target objects:');
 const target = new Target();
-clientCode(target);
+main(target);
 
 console.log('');
 
@@ -45,4 +21,4 @@ console.log('');
 
 console.log('Client: But I can work with it via the Adapter:');
 const adapter = new Adapter(adaptee);
-clientCode(adapter);
+main(adapter);
