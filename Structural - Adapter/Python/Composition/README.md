@@ -1,7 +1,0 @@
-## Conceptual Example (via object composition)
-
-This example illustrates the structure of the Adapter design pattern. It focuses on answering these questions:
-
-* What classes does it consist of?
-* What roles do these classes play?
-* In what way the elements of the pattern are related?
