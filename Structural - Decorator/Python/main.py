@@ -1,52 +1,22 @@
-class Component():
-    def operation(self) -> str:
-        pass
+from component.component import Component
+from concrete_component.concrete_component import ConcreteComponent
+from concrete_decorator.concrete_decorator_a import ConcreteDecoratorA
+from concrete_decorator.concrete_decorator_b import ConcreteDecoratorB
 
 
-class ConcreteComponent(Component):
-    def operation(self) -> str:
-        return "ConcreteComponent"
-
-
-class Decorator(Component):
-    _component: Component = None
-
-    def __init__(self, component: Component) -> None:
-        self._component = component
-
-    @property
-    def component(self) -> Component:
-        return self._component
-
-    def operation(self) -> str:
-        return self._component.operation()
-
-
-class ConcreteDecoratorA(Decorator):
-    def operation(self) -> str:
-        return f"ConcreteDecoratorA({self.component.operation()})"
-
-
-class ConcreteDecoratorB(Decorator):
-    def operation(self) -> str:
-        return f"ConcreteDecoratorB({self.component.operation()})"
-
-
-def client_code(component: Component) -> None:
+def main(component: Component) -> None:
     # ...
-
     print(f"RESULT: {component.operation()}", end="")
-
     # ...
 
 
 if __name__ == "__main__":
     simple = ConcreteComponent()
     print("Client: I've got a simple component:")
-    client_code(simple)
+    main(simple)
     print("\n")
 
     decorator1 = ConcreteDecoratorA(simple)
     decorator2 = ConcreteDecoratorB(decorator1)
     print("Client: Now I've got a decorated component:")
-    client_code(decorator2)
+    main(decorator2)
