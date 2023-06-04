@@ -1,53 +1,20 @@
-interface Component {
-  operation(): string;
-}
+import { ConcreteComponent } from "./concrete-component/concrete-component.ts";
+import { ConcreteDecoratorA } from "./concrete-decorator/concrete-decorator-a.ts";
+import { Component } from "./interface/component.ts";
 
-class ConcreteComponent implements Component {
-  public operation(): string {
-      return 'ConcreteComponent';
-  }
-}
 
-class Decorator implements Component {
-  protected component: Component;
-
-  constructor(component: Component) {
-      this.component = component;
-  }
-
-  public operation(): string {
-      return this.component.operation();
-  }
-}
-
-class ConcreteDecoratorA extends Decorator {
-  public operation(): string {
-      return `ConcreteDecoratorA(${super.operation()})`;
-  }
-}
-
-class ConcreteDecoratorB extends Decorator {
-  public operation(): string {
-      return `ConcreteDecoratorB(${super.operation()})`;
-  }
-}
-
-function clientCode(component: Component) {
+function main(component: Component) {
   // ...
-
   console.log(`RESULT: ${component.operation()}`);
-
   // ...
 }
-
 
 const concrete = new ConcreteComponent();
 console.log('Client: I\'ve got a simple component:');
-clientCode(concrete);
+main(concrete);
 console.log('');
 
-
 const decorator1 = new ConcreteDecoratorA(concrete);
-const decorator2 = new ConcreteDecoratorB(decorator1);
+const decorator2 = new ConcreteDecoratorA(decorator1);
 console.log('Client: Now I\'ve got a decorated component:');
-clientCode(decorator2);
+main(decorator2);
