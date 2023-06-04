@@ -1,40 +1,11 @@
-from __future__ import annotations
-from abc import ABC, abstractmethod
+
+from abstraction.abstraction import Abstraction
+from concrete_implementation.concrete_implementation_a import ConcreteImplementationA
+from concrete_implementation.concrete_implementation_b import ConcreteImplementationB
+from extended_abstraction.extended_abstraction import ExtendedAbstraction
 
 
-class Abstraction:
-    def __init__(self, implementation: Implementation) -> None:
-        self.implementation = implementation
-
-    def operation(self) -> str:
-        return (f"Abstraction: Base operation with:\n"
-                f"{self.implementation.operation_implementation()}")
-
-
-class ExtendedAbstraction(Abstraction):
-    def operation(self) -> str:
-        return (f"ExtendedAbstraction: Extended operation with:\n"
-                f"{self.implementation.operation_implementation()}")
-
-
-class Implementation(ABC):
-    @abstractmethod
-    def operation_implementation(self) -> str:
-        pass
-
-
-
-class ConcreteImplementationA(Implementation):
-    def operation_implementation(self) -> str:
-        return "ConcreteImplementationA: Here's the result on the platform A."
-
-
-class ConcreteImplementationB(Implementation):
-    def operation_implementation(self) -> str:
-        return "ConcreteImplementationB: Here's the result on the platform B."
-
-
-def client_code(abstraction: Abstraction) -> None:
+def main(abstraction: Abstraction) -> None:
     # ...
 
     print(abstraction.operation(), end="")
@@ -43,17 +14,14 @@ def client_code(abstraction: Abstraction) -> None:
 
 
 if __name__ == "__main__":
-    """
-    The client code should be able to work with any pre-configured abstraction-
-    implementation combination.
-    """
-
     implementation = ConcreteImplementationA()
     abstraction = Abstraction(implementation)
-    client_code(abstraction)
+    main(abstraction)
 
     print("\n")
 
     implementation = ConcreteImplementationB()
     abstraction = ExtendedAbstraction(implementation)
-    client_code(abstraction)
+    main(abstraction)
+    
+    print("\n")
