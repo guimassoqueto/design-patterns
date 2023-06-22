@@ -1,6 +1,7 @@
 # Design Patterns
 
 ## Creational by Popularity
+:star::star::star: [Abstract Factory](./Creational%20-%20Abstract%20Factory/)  
 :star::star::star: [Factory](./Creational%20-%20Factory/)  
 :star::star: [Singleton](./Creational%20-%20Singleton/)  
 
