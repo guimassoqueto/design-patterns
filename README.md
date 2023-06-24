@@ -4,6 +4,7 @@
 :star::star::star: [Abstract Factory](./Creational%20-%20Abstract%20Factory/)  
 :star::star::star: [Builder](./Creational%20-%20Builder/)  
 :star::star::star: [Factory](./Creational%20-%20Factory/)  
+:star::star: [Prototype](./Creational%20-%20Prototype/)  
 :star::star: [Singleton](./Creational%20-%20Singleton/)  
 
 ## Structural by Popularity
