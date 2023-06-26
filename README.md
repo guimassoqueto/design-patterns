@@ -14,6 +14,7 @@
 :star::star: [Facade](./Structural%20-%20Facade/)  
 :star: [Bridge](./Structural%20-%20Bridge/)  
 :star: [Proxy](./Structural%20-%20Proxy/)  
+:star: [Flyweight](./Structural%20-%20Flyweight/)  
   
 
 ## Behavioral by Popularity
