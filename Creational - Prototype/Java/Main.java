@@ -1,24 +1,52 @@
-import Factory.Dialog;
-import Factory.WindowsDialog;
-import Factory.HtmlDialog;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ShapesPackage.Circle;
+import ShapesPackage.Rectangle;
+import ShapesPackage.Shape;
+
 
 public class Main {
-  private static Dialog dialog;
+    public static void main(String[] args) {
+        List<Shape> shapes = new ArrayList<>();
+        List<Shape> shapesCopy = new ArrayList<>();
 
-  public static void main(String[] args) {
-    configure();
-    runBusinessLogic();
-  }
+        Circle circle = new Circle();
+        circle.x = 10;
+        circle.y = 20;
+        circle.radius = 15;
+        circle.color = "red";
+        shapes.add(circle);
 
-  static void configure() {
-    if (System.getProperty("os.name").equals("Windows 10")) {
-    dialog = new WindowsDialog();
-    } else {
-    dialog = new HtmlDialog();
+        Circle anotherCircle = (Circle) circle.clone();
+        shapes.add(anotherCircle);
+
+        Rectangle rectangle = new Rectangle();
+        rectangle.width = 10;
+        rectangle.height = 20;
+        rectangle.color = "blue";
+        shapes.add(rectangle);
+
+        cloneAndCompare(shapes, shapesCopy);
     }
-  }
 
-  static void runBusinessLogic() {
-    dialog.renderWindow();
-  }
+    private static void cloneAndCompare(List<Shape> shapes, List<Shape> shapesCopy) {
+        for (Shape shape : shapes) {
+            shapesCopy.add(shape.clone());
+        }
+
+        for (int i = 0; i < shapes.size(); i++) {
+            if (shapes.get(i) != shapesCopy.get(i)) {
+                System.out.println(i + ": Shapes are different objects (yay!)");
+                if (shapes.get(i).equals(shapesCopy.get(i))) {
+                    System.out.println(i + ": And they are identical (yay!)");
+                } else {
+                    System.out.println(i + ": But they are not identical (booo!)");
+                }
+            } else {
+                System.out.println(i + ": Shape objects are the same (booo!)");
+            }
+        }
+    }
 }

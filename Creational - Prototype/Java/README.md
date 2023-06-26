@@ -1,11 +1,7 @@
-## Factory in Java
+## Prototype in Java
 
-### Production of cross-platform GUI elements
+### Copying graphical shapes
 
-In this example, Buttons play a product role and dialogs act as creators.
+Let’s take a look at how the Prototype can be implemented without the standard Cloneable interface.
 
-Different types of dialogs require their own types of elements. That’s why we create a subclass for each dialog type and override their factory methods.
-
-Now, each dialog type will instantiate proper button classes. Base dialog works with products using their common interface, that’s why its code remains functional after all changes.
-
-[Factory in Java](https://refactoring.guru/design-patterns/factory-method/java/example)
+[Prototype in Java](https://refactoring.guru/design-patterns/prototype/java/example)
