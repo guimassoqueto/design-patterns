@@ -18,6 +18,7 @@
   
 
 ## Behavioral by Popularity
+:star::star::star: [Command](./Behavioral%20-%20Command/)  
 :star::star::star: [Iterator](./Behavioral%20-%20Iterator/)  
 :star::star::star: [Observer](./Behavioral%20-%20Observer/)  
 :star::star::star: [Strategy](./Behavioral%20-%20Strategy/)  
